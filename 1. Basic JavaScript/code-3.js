@@ -89,7 +89,7 @@ myTest(); // it will print foo to the console
 console.log(loc); // it will throw an error, as loc is not defined outside of the function
 
 //* 50. Global vs. Local Scope in Functions
-// t is possible to have both local and global variables with the same name
+// It is possible to have both local and global variables with the same name
 //! The local variable takes precedence over the global variable
 var someVar = "Hat";
 function myFun() {
