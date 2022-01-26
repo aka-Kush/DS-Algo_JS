@@ -146,4 +146,4 @@ const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr); // 89
 
 // The spread operator only works in-place, like in an argument to a function or in an array literal
-const spreaded = ...arr; // this code will not work
+// const spreaded = ...arr; // this code will not work
