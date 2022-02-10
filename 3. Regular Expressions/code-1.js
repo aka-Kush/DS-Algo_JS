@@ -36,7 +36,7 @@ let testStr = "kanYEwest";
 let regexStr3 = /ye/i;
 console.log(regexStr3.test(testStr)); // true
 
-//* 4. Extract Matches
+//* 5. Extract Matches
 // You can also extract the actual matches you found with the .match() method.
 // To use the .match() method, apply the method on a string and pass in the regex inside the parentheses
 let ourStr = "Regular Expressions";
@@ -45,7 +45,7 @@ ourStr.match(ourRegex); // ['Expression']
 // or
 "Random Variable".match(/Var/); // ['Var']
 
-//* 5. Find More Than the First Match
+//* 6. Find More Than the First Match
 let testStr = "Repeat, Repeat, Repeat";
 let ourRegex = /Repeat/;
 testStr.match(ourRegex); // ["Repeat"]
@@ -55,7 +55,7 @@ let repeatRegex = /Repeat/g;
 testStr.match(repeatRegex); // ["Repeat", "Repeat", "Repeat"]
 //! Note: You can have multiple flags on your regex like /search/gi
 
-//* 6. Match Anything with Wildcard Period
+//* 7. Match Anything with Wildcard Period
 // Sometimes you won't know the exact characters in your patterns
 // The wildcard character . will match any one character. The wildcard is also called dot and period. 
 // You can use the wildcard character just like any other character in the regex.
@@ -66,7 +66,7 @@ let huRegex = /hu./;
 huRegex.test(humStr); // true
 huRegex.test(hugStr); // true
 
-//* 7. Match Single Character with Multiple Possibilities
+//* 8. Match Single Character with Multiple Possibilities
 // You can search for a literal pattern with some flexibility with character classes. 
 // Character classes allow you to define a group of characters you wish to match by placing 
 // them inside square([and]) brackets. For example, you want to match bag, big, and bug but not bog. 
@@ -82,7 +82,7 @@ bagStr.match(bgRegex); // ["bag"]
 bugStr.match(bgRegex); // ["bug"]
 bogStr.match(bgRegex); // null
 
-//* 8. Match Letters of the Alphabet
+//* 9. Match Letters of the Alphabet
 // When you need to match a large range of characters, that's a lot of typing
 // hyphen character: - is a built-in feature that makes this short and simple as you can define a range of characters to match
 let catStr = "cat";
